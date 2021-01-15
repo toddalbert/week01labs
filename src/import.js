@@ -1,4 +1,4 @@
-var { doSomething, doSomethingElse } = require('./export')
+const { doSomething, doSomethingElse } = require('./export')
 
 doSomething('Todd', 'Michelle')
 
