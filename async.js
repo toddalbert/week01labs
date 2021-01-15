@@ -1,7 +1,20 @@
-console.log('Start!')
+// This way
+function doSomething(res) {
+  console.log('Result: ', res)
+}
 
-setTimeout(() => { // waits for xxx micro-seconds
-  console.log('Timer done!')
-}, 0) // 0 microseconds (1000 = 1 sec)
+function square(num, cb) {
+  let result = num * num
+  cb(result)
+}
 
-console.log('Finish!')
+square(4, doSomething)
+// --------------------------
+
+// This other way
+function square2(num) {
+  return num * num
+}
+
+let result = square2(4)
+console.log('Result: ', result)
