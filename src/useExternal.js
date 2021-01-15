@@ -1,4 +1,4 @@
-const coffees = require('./coffee.json')
+const coffees = require('../data/coffee.json')
 
 coffees.forEach(recipe => {
   if(recipe.ingredients.includes('Steamed Milk') 
